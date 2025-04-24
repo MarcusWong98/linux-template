@@ -11,6 +11,9 @@ $apt install net-tools sudo openssh-server openssh-client -y
 Add user to /etc/sudoers in the line #User privilege specification
  admin ALL=(ALL:ALL) ALL
 
+Edit ~/.profile
+ append export PATH="$PATH:/usr/sbin" at the end
+
 Edit /etc/network/interface
  Iface ens192 inet static
   address 10.1.254.151/24
